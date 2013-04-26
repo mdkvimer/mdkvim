@@ -1,122 +1,112 @@
 set syntax=on
 
-" È¥µôÊäÈëŽíÎóµÄÌáÊŸÉùÒô
+ 
 set noeb
 
-" ÔÚŽŠÀíÎŽ±£Žæ»òÖ»¶ÁÎÄŒþµÄÊ±ºò£¬µ¯³öÈ·ÈÏ
+ 
 set confirm
-
-" ×Ô¶¯Ëõœø
+ 
 set autoindent
 set cindent
 
-" TabŒüµÄ¿í¶È
+ 
 set tabstop=4
 
-" Í³Ò»ËõœøÎª4
+ 
 set softtabstop=4
 set shiftwidth=4
 
-" ²»ÒªÓÃ¿ÕžñŽúÌæÖÆ±í·û
+ 
 set noexpandtab
 
-" ÔÚÐÐºÍ¶Î¿ªÊŒŽŠÊ¹ÓÃÖÆ±í·û
+ 
 set smarttab
-
-" ÏÔÊŸÐÐºÅ
+ 
 set number
-" ÀúÊ·ŒÇÂŒÊý
+ 
 set history=1000
 
-"œûÖ¹Éú³ÉÁÙÊ±ÎÄŒþ
+ 
 set nobackup
 set noswapfile
 
-"ËÑË÷ºöÂÔŽóÐ¡ÐŽ
+ 
 set ignorecase
 
-"ËÑË÷Öð×Ö·ûžßÁÁ
+ 
 set hlsearch
 set incsearch
 
-"ÐÐÄÚÌæ»»
+ 
 set gdefault
 
-"±àÂëÉèÖÃ
+ 
 set enc=utf-8
 set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
 
-"ÓïÑÔÉèÖÃ 
+ 
 set langmenu=zh_CN.UTF-8
 set helplang=cn
 
-" ÎÒµÄ×ŽÌ¬ÐÐÏÔÊŸµÄÄÚÈÝ£š°üÀšÎÄŒþÀàÐÍºÍœâÂë£©
+ 
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 "set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]
 
-" ×ÜÊÇÏÔÊŸ×ŽÌ¬ÐÐ
+ 
 set laststatus=2
 
-" ÔÚ±àŒ­¹ý³ÌÖÐ£¬ÔÚÓÒÏÂœÇÏÔÊŸ¹â±êÎ»ÖÃµÄ×ŽÌ¬ÐÐ
+ 
 set ruler           
 
-" ÃüÁîÐÐ£šÔÚ×ŽÌ¬ÐÐÏÂ£©µÄžß¶È£¬Ä¬ÈÏÎª1£¬ÕâÀïÊÇ2
+ 
 set cmdheight=2
 
-" Õì²âÎÄŒþÀàÐÍ
+ 
 filetype on
 
-" ÔØÈëÎÄŒþÀàÐÍ²åŒþ
+ 
 filetype plugin on
-
-" ÎªÌØ¶šÎÄŒþÀàÐÍÔØÈëÏà¹ØËõœøÎÄŒþ
+ 
 filetype indent on
 
-" ±£ŽæÈ«ŸÖ±äÁ¿
+ 
 set viminfo+=!
 
-" ŽøÓÐÈçÏÂ·ûºÅµÄµ¥ŽÊ²»Òª±»»»ÐÐ·Öžî
+ 
 set iskeyword+=_,$,@,%,#,-
 
-" ×Ö·ûŒä²åÈëµÄÏñËØÐÐÊýÄ¿
+ 
 set linespace=0
-
-" ÔöÇ¿Ä£ÊœÖÐµÄÃüÁîÐÐ×Ô¶¯Íê³É²Ù×÷
+ 
 set wildmenu
-
-" Ê¹»ØžñŒü£šbackspace£©Õý³£ŽŠÀíindent, eol, startµÈ
+ 
 set backspace=2
-
-" ÔÊÐíbackspaceºÍ¹â±êŒü¿çÔœÐÐ±ßœç
+ 
 set whichwrap+=<,>,h,l
-
-" ¿ÉÒÔÔÚbufferµÄÈÎºÎµØ·œÊ¹ÓÃÊó±ê£šÀàËÆofficeÖÐÔÚ¹€×÷ÇøË«»÷Êó±ê¶šÎ»£©
+ 
 set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
-
-" Íš¹ýÊ¹ÓÃ: commandsÃüÁî£¬žæËßÎÒÃÇÎÄŒþµÄÄÄÒ»ÐÐ±»žÄ±ä¹ý
+ 
 set report=0
 
-" Æô¶¯µÄÊ±ºò²»ÏÔÊŸÄÇžöÔ®ÖúË÷ÂíÀï¶ùÍ¯µÄÌáÊŸ
+ 
 set shortmess=atI
-
-" ÔÚ±»·ÖžîµÄŽ°¿ÚŒäÏÔÊŸ¿Õ°×£¬±ãÓÚÔÄ¶Á
+ 
 set fillchars=vert:\ ,stl:\ ,stlnc:\
 
-" žßÁÁÏÔÊŸÆ¥ÅäµÄÀšºÅ
+ 
 set showmatch
 
-" Æ¥ÅäÀšºÅžßÁÁµÄÊ±Œä£šµ¥Î»ÊÇÊ®·ÖÖ®Ò»Ãë£©
+ 
 set matchtime=5
-
-" ¹â±êÒÆ¶¯µœbufferµÄ¶¥²¿ºÍµ×²¿Ê±±£³Ö3ÐÐŸàÀë
+ 
 set scrolloff=3
 
-" ÎªC³ÌÐòÌá¹©×Ô¶¯Ëõœø
+ 
 set smartindent
 
-" Ö»ÔÚÏÂÁÐÎÄŒþÀàÐÍ±»Õì²âµœµÄÊ±ºòÏÔÊŸÐÐºÅ£¬ÆÕÍšÎÄ±ŸÎÄŒþ²»ÏÔÊŸ
+ 
 if has("autocmd")
    autocmd FileType xml,html,c,cs,java,perl,shell,bash,cpp,python,vim,php,ruby set number
    autocmd FileType xml,html vmap <C-o> <ESC>'<i<!--<ESC>o<ESC>'>o-->
@@ -129,11 +119,7 @@ if has("autocmd")
       \ endif
 endif " has("autocmd")
 
-" F5±àÒëºÍÔËÐÐC³ÌÐò£¬F6±àÒëºÍÔËÐÐC++³ÌÐò
-" Çë×¢Òâ£¬ÏÂÊöŽúÂëÔÚwindowsÏÂÊ¹ÓÃ»á±šŽí
-" ÐèÒªÈ¥µô./ÕâÁœžö×Ö·û
-
-" CµÄ±àÒëºÍÔËÐÐ
+ 
 map <F5> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
 exec "w"
@@ -141,7 +127,7 @@ exec "!gcc % -o %<"
 exec "! ./%<"
 endfunc
 
-" C++µÄ±àÒëºÍÔËÐÐ
+ 
 map <F6> :call CompileRunGpp()<CR>
 func! CompileRunGpp()
 exec "w"
@@ -149,11 +135,11 @@ exec "!g++ % -o %<"
 exec "! ./%<"
 endfunc
 
-" <F7> ÔËÐÐpython³ÌÐò  
+   
 map <F7> :w<cr>:!python %<cr>  
   
   
-" <F8> ÔËÐÐshell³ÌÐò  
+   
 map <F8> :call CompileRunSH()<CR>  
 func! CompileRunSH()  
 exec "w"  
@@ -162,7 +148,7 @@ exec "!./%"
 endfunc  
   
   
-"<F9>  gdbµ÷ÊÔ  
+  
 map <F9> :call Debug()<CR>  
 func!  Debug()  
 exec "w"  
@@ -170,7 +156,7 @@ exec "!gcc % -o %< -gstabs+"
 exec "!gdb %<"
 endfunc
   
-" ÄÜ¹»Æ¯ÁÁµØÏÔÊŸ.NFOÎÄŒþ
+ 
 set encoding=utf-8
 function! SetFileEncodings(encodings)
     let b:myfileencodingsbak=&fileencodings
@@ -184,15 +170,14 @@ endfunction
 au BufReadPre *.nfo call SetFileEncodings('cp437')|set ambiwidth=single
 au BufReadPost *.nfo call RestoreFileEncodings()
 
-" žßÁÁÏÔÊŸÆÕÍštxtÎÄŒþ£šÐèÒªtxt.vimœÅ±Ÿ£©
+ 
 au BufRead,BufNewFile *  setfiletype txt
-
-" ÓÃ¿ÕžñŒüÀŽ¿ª¹ØÕÛµþ
+ 
 set foldenable
 set foldmethod=manual
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 
-" minibufexpl²åŒþµÄÒ»°ãÉèÖÃ
+ 
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
